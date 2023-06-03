@@ -21,7 +21,7 @@ public class KafkaService {
     final KafkaTemplate<String, String> kafkaTemplate;
     final ObjectMapper objectMapper;
 
-    List<Customer> customers = new ArrayList<>();
+    final List<Customer> customers = new ArrayList<>();
 
 
     public void send(Object object, String topic) throws JsonProcessingException {
